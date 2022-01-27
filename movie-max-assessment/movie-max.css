@@ -21,6 +21,17 @@ body {
     margin: auto;
     padding: 0;
     font-family: quicksand, Arial, Helvetica, sans-serif;
+    background-color: #C1BDBD;
+}
+
+hr {
+    width: 50%;
+    background-color: black;
+    height: 3px;
+}
+
+.hr-footer {
+    width: 95%;
 }
 
 /************
@@ -41,7 +52,7 @@ body {
 
 .header {
     grid-area: header;
-    height: 10vh;
+    /* height: 10vh; */
 }
 
 .popular-shows {
@@ -62,16 +73,18 @@ body {
 
 ************/
 
-.header img {
-    max-width: 100%;
-    height: auto;
-    background-size: contain;
+.header div {
+    /* height: 10vh; */
 }
 
-/* .header div {
-    background-image: url("/Users/yakisoba/repos/TECHIS-JS-A-JAKEALVAREZ/movie-max-assessment/img/header-img.png") no-repeat center fixed;
-    background-size: cover;
-} */
+.img-container {
+    display: flex;
+}
+
+.header img {
+    width: 100%;
+    height: auto;
+}
 
 /************
 
@@ -79,6 +92,34 @@ POPULAR-SHOWS
 
 ************/
 
+.popular-shows {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1%;
+}
+
+.ps-title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ps-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 1%;
+    padding: 15px;
+    margin: 0 40px;
+}
+
+.ps-grid img {
+    width: 100%;
+    height: auto;
+}
 
 
 /************
@@ -87,10 +128,36 @@ POPULAR-SHOWS
 
 ************/
 
+.coming-soon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1%;
+}
 
+.cs-title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cs-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+    padding: 15px;
+    margin: 0 40px;
+}
 
 /************
 
    FOOTER
 
 ************/
+
+footer img {
+    margin: 0 3%;
+}
