@@ -274,7 +274,85 @@ footer img {
 
 ************/
 
-@media screen and (max-width: 1328px) {
+@media screen and (max-width: 600px) {
+    .ps-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1%;
+        padding: 15px;
+        margin: 0 40px;
+    }
+
+    .coming-soon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 5% 1% 0 1%;
+    }
+
+    .cs-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        gap: 1%;
+        padding: 15px;
+        margin: 0 40px;
+    }
+
+    /* TEST */
+
+    .movie-max-img {
+        height: 100px !important;
+        width: 266px !important;
+        margin-left: 25px;
+        margin-right: 15px !important;
+    }
+
+    .right-nav {
+        display: flex;
+        align-items: center;
+    }
+    
+    .search {
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        border: 2px #ffffff solid;
+        border-radius: 15px;
+        margin-top: 15px;
+    }
+    
+    input {
+        background-color: transparent;
+        border: none;
+        padding: 18px;
+    }
+    
+    .search-icon {
+        height: 32px !important;
+        width: 32px !important;
+    }
+    
+    .nav-links {
+        display: flex;
+        list-style-type: none;
+        /* margin-right: 25px; */
+        margin-right: 0;
+    }
+    
+    .nav-links li {
+        /* margin: 0 35px; */
+        margin: 0 0;
+    }
+    
+    .link1 {
+        /* margin-right: 30px; */
+    }
+}
+
+@media screen and (max-width: 1328px) and (min-width: 601px) {
     .movie-max-img {
         height: 100px !important;
         width: 266px !important;
